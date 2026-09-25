@@ -1,0 +1,41 @@
+:root {
+  /* Core Color Palette inspired by the warm organic aesthetic */
+  --bg-primary: #FAF7F2;
+  --bg-secondary: #F3EFE8;
+  --bg-surface: #FFFFFF;
+  --bg-card: rgba(255, 255, 255, 0.85);
+
+  /* Typography Colors */
+  --text-main: #271B14;
+  --text-muted: #78685C;
+  --text-subtle: #A3968B;
+  --text-inverse: #FFFFFF;
+
+  /* Accent Callout Palette */
+  --badge-orange: #E67246;
+  --badge-orange-hover: #D46135;
+  --badge-green: #83A47D;
+  --badge-green-hover: #71936B;
+  --badge-brown: #795745;
+  --badge-brown-hover: #654635;
+
+  /* UI Element Colors */
+  --border-light: rgba(120, 104, 92, 0.15);
+  --border-subtle: rgba(120, 104, 92, 0.08);
+  --pill-bg: #EFE9E0;
+  --pill-hover: #E5DFD4;
+  --shadow-soft: 0 10px 30px -10px rgba(39, 27, 20, 0.08);
+  --shadow-float: 0 20px 40px -15px rgba(39, 27, 20, 0.12);
+  --shadow-pill: 0 6px 20px rgba(39, 27, 20, 0.09);
+
+  /* Fonts */
+  --font-heading: 'Syne', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-body: 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  /* Radii */
+  --radius-full: 9999px;
+  --radius-xl: 28px;
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 8px;
+}
