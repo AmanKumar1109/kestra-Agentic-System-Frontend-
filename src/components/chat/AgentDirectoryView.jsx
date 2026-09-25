@@ -55,55 +55,61 @@ export default function AgentDirectoryView({ selectedAgentId, onDeployAgent, onO
           ))}
         </div>
 
-        {/* Agent Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pb-12">
+        {/* Vibrant Colored Agent Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12">
           {filteredCatalog.map((agent) => {
             const IconComp = agent.icon;
             const isCurrentlyActive = selectedAgentId === agent.id;
             return (
               <div
                 key={agent.id}
-                className={`bg-white border rounded-2xl p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-all duration-300 hover:-translate-y-1 group relative ${
-                  isCurrentlyActive ? 'border-neutral-900 ring-1 ring-neutral-900' : 'border-neutral-200'
+                style={{ backgroundColor: agent.color }}
+                className={`rounded-[26px] p-6 sm:p-7 flex flex-col justify-between text-white shadow-[0_14px_35px_rgba(0,0,0,0.12)] hover:shadow-[0_22px_45px_rgba(0,0,0,0.22)] transition-all duration-300 hover:-translate-y-1.5 group relative border border-white/20 overflow-hidden ${
+                  isCurrentlyActive ? 'ring-4 ring-neutral-900/30 ring-offset-2' : ''
                 }`}
               >
-                <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <div
-                      className="w-11 h-11 rounded-xl flex items-center justify-center text-white shadow-xs transition-transform duration-300 group-hover:scale-105"
-                      style={{ backgroundColor: agent.color }}
-                    >
-                      <IconComp className="w-5 h-5" strokeWidth={2} />
+                {/* Subtle Glass Glow Overlay */}
+                <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full blur-2xl pointer-events-none -mr-10 -mt-10" />
+
+                <div className="relative z-10">
+                  <div className="flex items-center justify-between mb-5">
+                    {/* Glass Icon Container */}
+                    <div className="w-12 h-12 rounded-2xl bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white shadow-xs transition-transform duration-300 group-hover:scale-110">
+                      <IconComp className="w-6 h-6" strokeWidth={2.2} />
                     </div>
-                    <span className="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-neutral-100 text-neutral-600 border border-neutral-200">
+
+                    {/* Translucent Badge */}
+                    <span className="text-[11px] font-semibold px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white border border-white/30 shadow-2xs">
                       {agent.badgeText}
                     </span>
                   </div>
 
-                  <h3 className="font-heading font-bold text-base text-neutral-900 mb-1 group-hover:text-neutral-700 transition-colors">
+                  <h3 className="font-heading font-bold text-lg sm:text-xl text-white mb-2 leading-tight">
                     {agent.name}
                   </h3>
-                  <p className="text-xs text-neutral-500 line-clamp-2 leading-relaxed mb-4">
+                  <p className="text-xs text-white/85 line-clamp-3 leading-relaxed mb-6">
                     {agent.description}
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-neutral-100 flex items-center justify-between">
-                  <span className="text-[11px] font-mono font-medium text-emerald-600 flex items-center gap-1">
-                    <ShieldCheck className="w-3.5 h-3.5" />
+                {/* Bottom Footer: Metric & White Deploy Button */}
+                <div className="pt-4 border-t border-white/20 flex items-center justify-between gap-3 relative z-10">
+                  <span className="text-xs font-mono font-medium text-white/95 flex items-center gap-1.5">
+                    <ShieldCheck className="w-4 h-4 text-white" />
                     <span>{agent.metrics}</span>
                   </span>
 
                   <button
+                    type="button"
                     onClick={() => onDeployAgent(agent)}
-                    className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition-all cursor-pointer ${
-                      isCurrentlyActive
-                        ? 'bg-emerald-600 text-white shadow-xs'
-                        : 'bg-neutral-100 hover:bg-neutral-900 hover:text-white text-neutral-800'
-                    }`}
+                    className="px-4 py-2 rounded-xl text-xs font-bold bg-white text-neutral-900 hover:bg-neutral-100 flex items-center gap-1.5 shadow-[0_4px_14px_rgba(0,0,0,0.16)] active:scale-95 transition-all cursor-pointer shrink-0"
                   >
                     <span>{isCurrentlyActive ? 'Selected' : 'Deploy'}</span>
-                    {isCurrentlyActive ? <Check className="w-3.5 h-3.5" /> : <ArrowUpRight className="w-3.5 h-3.5" />}
+                    {isCurrentlyActive ? (
+                      <Check className="w-3.5 h-3.5 text-emerald-600 stroke-[3]" />
+                    ) : (
+                      <ArrowUpRight className="w-3.5 h-3.5 stroke-[2.5]" />
+                    )}
                   </button>
                 </div>
               </div>
