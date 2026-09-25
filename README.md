@@ -1,16 +1,31 @@
-# React + Vite
+# Kestra AI — Autonomous Data Intelligence Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Kestra is a prompt-to-dataset AI intelligence platform designed to turn plain English business requests into autonomous data collection, normalization, database querying, and multi-format export workflows.
 
-Currently, two official plugins are available:
+## 🌟 Key Features
+- **Prompt-to-Pipeline Chat Workspace**: Natural language conversion into multi-agent execution plans.
+- **Explore AI Agents Hub**: Dedicated card catalog for Web Scraper, Cold Email, SQL Database, Data Normalizer, Document Parser, and Predictive Analytics agents.
+- **Traceable Source Provenance**: Real-time DOM inspection, confidence scores, and raw HTTP source tracing.
+- **Step-by-Step Live Telemetry**: Dynamic multi-stage progress tracking (Parsing → Routing → Extraction → Validation).
+- **1-Click Multi-Destination Export**: Instant export to CSV, JSON, PostgreSQL, Notion, and Webhooks.
+- **Cron Pipeline Scheduler**: Automated recurring cron triggers for scheduled data collection.
+- **Centralized Datasets Dashboard**: Monitor live runs, execution history, and 1-click dataset re-execution.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack
+- **Framework**: React 19 + Vite
+- **Styling**: Tailwind CSS v4 (Warm organic clay palette: `#FAF7F2` cream, `#271B14` espresso, `#E67246` terracotta, `#7E9C79` sage green)
+- **Animations**: GSAP 3 (Floating physics, callouts, and smooth micro-interactions)
+- **Icons**: Lucide React
 
-## React Compiler
+## 🚀 Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# Install dependencies
+npm install
 
-## Expanding the ESLint configuration
+# Start development server
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Build production bundle
+npm run build
+```

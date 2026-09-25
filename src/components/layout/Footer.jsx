@@ -13,7 +13,7 @@ export default function Footer() {
               <path d="M12 2C10.34 2 9 3.34 9 5c0 1.3.84 2.4 2 2.82V9H9.82C9.4 7.84 8.3 7 7 7 5.34 7 4 8.34 4 10s1.34 3 3 3c1.3 0 2.4-.84 2.82-2H11v1.18c-1.16.42-2 1.52-2 2.82 0 1.66 1.34 3 3 3s3-1.34 3-3c0-1.3-.84-2.4-2-2.82V11h1.18c.42 1.16 1.52 2 2.82 2 1.66 0 3-1.34 3-3s-1.34-3-3-3c-1.3 0-2.4.84-2.82 2H13V7.82c1.16-.42 2-1.52 2-2.82 0-1.66-1.34-3-3-3z" />
             </svg>
           </div>
-          <span className="font-semibold text-white">Data AI</span>
+          <span className="font-semibold text-white">Kestra AI</span>
           <span>© 2026. Built for Hackathon Excellence.</span>
         </div>
 

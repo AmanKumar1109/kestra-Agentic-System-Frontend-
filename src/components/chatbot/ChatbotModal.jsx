@@ -72,7 +72,7 @@ export default function ChatbotModal() {
             </div>
             <div>
               <h3 className="font-heading font-semibold text-[#271B14] text-base">
-                Data AI Agent Workspace
+                Kestra AI Agent Workspace
               </h3>
               <p className="text-xs text-[#78685C]">
                 Connected to SQL Engines, Web Crawlers & Normalizers

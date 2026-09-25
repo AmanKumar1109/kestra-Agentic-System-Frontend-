@@ -28,7 +28,7 @@ export default function HeroSection({ onStartChat, onSelectCallout }) {
           Intelligent All-Purpose
         </span>
         <span ref={titleLine2Ref} className="block mt-1 sm:mt-2">
-          Data AI Chatbot
+          Kestra AI Chatbot
         </span>
       </h1>
 

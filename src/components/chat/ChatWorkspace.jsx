@@ -17,7 +17,7 @@ import { RECENT_CHATS, DEMO_PROMPTS } from '../../data/templatesData';
 export default function ChatWorkspace({ onBackToHome }) {
   const [currentView, setCurrentView] = useState('chat'); // 'chat' | 'explore' | 'datasets'
   const [selectedAgent, setSelectedAgent] = useState(AGENTS_CATALOG[0]);
-  const [selectedModel, setSelectedModel] = useState('Data AI 4o');
+  const [selectedModel, setSelectedModel] = useState('Kestra 4o');
   const [isModelDropdownOpen, setIsModelDropdownOpen] = useState(false);
   const [messages, setMessages] = useState([]);
   const [inputQuery, setInputQuery] = useState('');
@@ -164,7 +164,7 @@ export default function ChatWorkspace({ onBackToHome }) {
 
               {isModelDropdownOpen && (
                 <div className="absolute top-10 right-0 w-52 bg-white border border-[#E8E2D8] rounded-2xl shadow-xl py-1.5 z-30">
-                  {['Data AI 4o (Recommended)', 'Data AI Flash', 'Data AI Reasoning Engine'].map((m, i) => (
+                  {['Kestra 4o (Recommended)', 'Kestra Flash', 'Kestra Reasoning Engine'].map((m, i) => (
                     <button
                       key={i}
                       onClick={() => {

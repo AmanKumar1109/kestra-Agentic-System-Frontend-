@@ -39,7 +39,7 @@ export default function ChatSidebar({
             <Bot className="w-4 h-4" />
           </div>
           <span className="font-heading-hero font-bold text-base text-[#271B14]">
-            DataWeave AI
+            Kestra AI
           </span>
         </div>
 

@@ -4,17 +4,20 @@ import { NAV_LINKS } from '../../utils/constants';
 export default function Navbar({ onOpenChat, onOpenAuth }) {
   return (
     <header className="w-full max-w-[1360px] mx-auto px-6 sm:px-12 pt-8 pb-4 flex items-center justify-between relative z-20">
-      {/* Brand Logo - 4-petal floral clover */}
+      {/* Brand Logo - 4-petal floral clover + Kestra Title */}
       <div className="flex items-center">
-        <a href="#" className="group flex items-center">
-          <div className="w-12 h-12 rounded-[18px] bg-[#EFE9E0] hover:bg-[#E6DFD4] flex items-center justify-center transition-all duration-300 group-hover:scale-105">
+        <a href="#" className="group flex items-center gap-3">
+          <div className="w-11 h-11 rounded-[16px] bg-[#EFE9E0] hover:bg-[#E6DFD4] flex items-center justify-center transition-all duration-300 group-hover:scale-105 shadow-xs">
             <svg
-              className="w-6 h-6 text-[#795745] fill-current transition-transform duration-500 group-hover:rotate-45"
+              className="w-5 h-5 text-[#795745] fill-current transition-transform duration-500 group-hover:rotate-45"
               viewBox="0 0 24 24"
             >
               <path d="M12 2C10.34 2 9 3.34 9 5c0 1.3.84 2.4 2 2.82V9H9.82C9.4 7.84 8.3 7 7 7 5.34 7 4 8.34 4 10s1.34 3 3 3c1.3 0 2.4-.84 2.82-2H11v1.18c-1.16.42-2 1.52-2 2.82 0 1.66 1.34 3 3 3s3-1.34 3-3c0-1.3-.84-2.4-2-2.82V11h1.18c.42 1.16 1.52 2 2.82 2 1.66 0 3-1.34 3-3s-1.34-3-3-3c-1.3 0-2.4.84-2.82 2H13V7.82c1.16-.42 2-1.52 2-2.82 0-1.66-1.34-3-3-3z" />
             </svg>
           </div>
+          <span className="font-heading-hero font-bold text-xl sm:text-2xl text-[#271B14] tracking-tight">
+            Kestra
+          </span>
         </a>
       </div>
 

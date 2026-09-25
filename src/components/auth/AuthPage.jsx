@@ -48,7 +48,7 @@ export default function AuthPage({ initialMode = 'login', onBackToHome, onLoginS
             </svg>
           </div>
           <span className="font-heading-hero font-bold text-xl text-[#271B14] tracking-tight">
-            Data AI
+            Kestra
           </span>
         </div>
       </div>
@@ -86,7 +86,7 @@ export default function AuthPage({ initialMode = 'login', onBackToHome, onLoginS
 
             {/* Title & Subtitle */}
             <h2 className="font-heading-hero text-2xl sm:text-3xl font-bold text-[#271B14] mb-2 tracking-tight">
-              {isLogin ? 'Welcome Back to Data AI' : 'Start Building Autonomous Pipelines'}
+              {isLogin ? 'Welcome Back to Kestra' : 'Start Building Autonomous Pipelines'}
             </h2>
             <p className="text-xs sm:text-sm text-[#78685C] mb-6">
               {isLogin
@@ -192,7 +192,7 @@ export default function AuthPage({ initialMode = 'login', onBackToHome, onLoginS
 
           {/* Footer note */}
           <p className="text-[11px] text-[#A3968B] text-center mt-6">
-            By signing up, you agree to Data AI's{' '}
+            By signing up, you agree to Kestra's{' '}
             <a href="#" className="underline hover:text-[#271B14]">Terms of Service</a> and{' '}
             <a href="#" className="underline hover:text-[#271B14]">Privacy Policy</a>.
           </p>
@@ -219,7 +219,7 @@ export default function AuthPage({ initialMode = 'login', onBackToHome, onLoginS
           <div className="my-6 flex items-center justify-center relative">
             <img
               src={heroImage}
-              alt="Data AI Modular Stack"
+              alt="Kestra Modular Stack"
               className="w-48 sm:w-56 h-auto object-contain drop-shadow-[0_20px_35px_rgba(0,0,0,0.4)]"
             />
           </div>
@@ -234,7 +234,7 @@ export default function AuthPage({ initialMode = 'login', onBackToHome, onLoginS
 
       {/* Footer */}
       <div className="text-center text-xs text-[#A3968B] mt-4">
-        © 2026 Data AI Platform. All rights reserved.
+        © 2026 Kestra AI Platform. All rights reserved.
       </div>
     </div>
   );

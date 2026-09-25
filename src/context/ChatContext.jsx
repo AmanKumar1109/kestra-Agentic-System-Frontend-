@@ -10,7 +10,7 @@ export function ChatProvider({ children }) {
   const [chatHistory, setChatHistory] = useState([
     {
       sender: 'assistant',
-      text: 'Hello! I am your Intelligent All-Purpose Data AI Chatbot. You can ask me to query SQL/NoSQL databases, scrape dynamic web pages, or clean and normalize messy datasets.',
+      text: 'Hello! I am your Intelligent All-Purpose Kestra AI Chatbot. You can ask me to query SQL/NoSQL databases, scrape dynamic web pages, or clean and normalize messy datasets.',
       timestamp: 'Just now',
     },
   ]);
