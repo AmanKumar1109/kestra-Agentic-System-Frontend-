@@ -11,6 +11,7 @@ export const HISTORICAL_DATASETS = [
     schemaDrift: 'None (Stable)',
     schedule: 'Weekly (Mon 9:00 AM)',
     destination: 'PostgreSQL & Google Sheets',
+    color: '#7E9C79',
   },
   {
     id: 'ds-102',
@@ -24,6 +25,7 @@ export const HISTORICAL_DATASETS = [
     schemaDrift: 'Minor (Resolved via Self-Healing DOM)',
     schedule: 'Daily (6:00 AM)',
     destination: 'HubSpot & CSV',
+    color: '#E67246',
   },
   {
     id: 'ds-103',
@@ -37,6 +39,7 @@ export const HISTORICAL_DATASETS = [
     schemaDrift: 'None',
     schedule: 'Realtime Webhook',
     destination: 'Snowflake & Parquet',
+    color: '#795745',
   },
 ];
 
